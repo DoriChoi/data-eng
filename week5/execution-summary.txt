@@ -1,0 +1,32 @@
+# 2026-10-29 Week 5 batch result (sanitized summary)
+# Summarized from shared console output; NOT a verbatim mart.log.
+
+[First run]
+2026-08-24 113000 2
+2026-08-25 1155000 2
+2026-08-26 46000 1
+
+[Second run — same input and result]
+2026-08-24 113000 2
+2026-08-25 1155000 2
+2026-08-26 46000 1
+
+[Single date 2026-08-25]
+exit code: 0
+[mart] 대상 날짜: 2026-08-25
+[mart] 원천 2행
+[mart] 마트 1행
+[mart] 완료
+
+[Missing date 2099-01-01]
+exit code: 1
+[mart] 대상 날짜: 2099-01-01
+[mart] 원천 0행
+[mart] 원천이 비어 있습니다 — 중단
+
+[Final full restoration]
+exit code: 0
+[mart] 대상 날짜: 전체
+[mart] 원천 5행
+[mart] 마트 3행
+[mart] 완료
