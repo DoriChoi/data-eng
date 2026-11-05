@@ -1,0 +1,6 @@
+# Local credentials / generated artifacts
+.env
+*.local.json
+plugins/
+.venv/
+__pycache__/
