@@ -7,6 +7,7 @@
 | 3주차 | Pandas, DuckDB, 데이터 정제·품질 검증 | [week3](./week3/) |
 | 4주차 | MinIO, Apache Iceberg, REST Catalog, Spark, Trino 레이크하우스 | [week4](./week4/) |
 | 5주차 | Spark Standalone, 파티셔닝·셔플, Iceberg 데이터 마트 | [week5](./week5/) |
+| 6주차 | Kafka, Debezium CDC, S3 Sink, MinIO 실시간 적재 | [week6](./week6/) |
 
 ## 4주차 주요 산출물
 
@@ -20,3 +21,9 @@
 - [PySpark 배치 코드](./week5/mart.py) — 환경변수로 MinIO 접속 정보 설정
 - [실습 README·실측 결과](./week5/README.md) — AQE, 셔플, 스큐, 파일 수, 멱등성
 - [배치 검증 요약](./week5/execution-summary.txt) — 성공/실패/복원 결과
+
+## 6주차 주요 산출물
+
+- [CDC → Kafka → MinIO 실습 README](./week6/README.md) — 전체 흐름, 실제 검증 결과, 남은 개선점
+- [Docker Compose 구성](./week6/docker-compose.yml) — Kafka·MySQL·Debezium·MinIO
+- [Debezium Source 커넥터](./week6/register-mysql.json) / [S3 Sink 커넥터](./week6/sink-minio.json) — 공개용 인증정보 대체 템플릿
