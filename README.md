@@ -8,6 +8,7 @@
 | 4주차 | MinIO, Apache Iceberg, REST Catalog, Spark, Trino 레이크하우스 | [week4](./week4/) |
 | 5주차 | Spark Standalone, 파티셔닝·셔플, Iceberg 데이터 마트 | [week5](./week5/) |
 | 6주차 | Kafka, Debezium CDC, S3 Sink, MinIO 실시간 적재 | [week6](./week6/) |
+| 7주차 | RAG, Chunking, Embedding, Qdrant, BM25, Hybrid Search | [week7](./week7/) |
 
 ## 4주차 주요 산출물
 
@@ -27,3 +28,9 @@
 - [CDC → Kafka → MinIO 실습 README](./week6/README.md) — 전체 흐름, 실제 검증 결과, 남은 개선점
 - [Docker Compose 구성](./week6/docker-compose.yml) — Kafka·MySQL·Debezium·MinIO
 - [Debezium Source 커넥터](./week6/register-mysql.json) / [S3 Sink 커넥터](./week6/sink-minio.json) — 공개용 인증정보 대체 템플릿
+
+## 7주차 주요 산출물
+
+- [벡터 스키마 정의서](./week7/vector-schema.yaml) — OpenAI 1536차원·Cosine·ID 규칙
+- [지식베이스 구축 스크립트](./week7/build_kb.py) — MinIO → Qdrant, 2회 실행 후 10개 유지 검증
+- [검증 코드 및 실습 기록](./week7/README.md) — 스키마 대조·검색 비교·RAG 응답
